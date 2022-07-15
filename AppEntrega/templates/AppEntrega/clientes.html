@@ -1,0 +1,17 @@
+{% extends "AppEntrega/inicio.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<h1>PAGINA DE CLIENTES HEREDADA</h1>
+
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="btn btn-primary" href="{% url 'clienteFormulario' %}"> Registrar Cliente</a>
+        <a class="btn btn-primary" href="{% url 'busquedaCliente' %}"> Buscar  Cliente</a>
+    </div>
+</nav>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "AppEntrega/inicio.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<h1>PAGINA DE EMPLEADOS HEREDADA</h1>
+
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="btn btn-primary" href="{% url 'empleadoFormulario' %}"> Registrar Empleado</a>
+    </div>
+</nav>
+{% endblock %}

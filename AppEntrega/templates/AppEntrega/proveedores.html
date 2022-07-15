@@ -1,0 +1,16 @@
+{% extends "AppEntrega/inicio.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+<h1>PAGINA DE PROVEEDORES HEREDADA</h1>
+
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="btn btn-primary" href="{% url 'proveedorFormulario' %}"> Registrar Proveedor</a>
+    </div>
+</nav>
+
+{% endblock %}

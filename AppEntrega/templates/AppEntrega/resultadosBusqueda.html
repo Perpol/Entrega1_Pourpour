@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> RESULTADOS DE LA BUSQUEDA </h1>
+
+     {% if respuesta_busqueda %}
+
+    <u1>
+        {% for client in respuesta_busqueda %}
+            <li>{{ client.id }}</li>
+            <li>{{ client.nombre }}</li>
+            <li>{{ client.email }}</li>
+            <br>
+        {% endfor %}
+    </u1>
+    
+    {% else %}
+        <p> No hay nombre con esa descripcion!!</p>
+    {% endif %}
+</body>
+</html>
